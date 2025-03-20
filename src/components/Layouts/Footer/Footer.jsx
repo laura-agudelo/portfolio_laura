@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { LuGithub } from "react-icons/lu";
 
 export const Footer = () => {
   return (
@@ -20,6 +21,11 @@ export const Footer = () => {
           <li>
             <a href="mailto:lauramarianaa189@gmail.com">
               <FaEnvelope className="icon"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/laura-agudelo" target="_blank" rel="noopener noreferrer">
+              <LuGithub className="icon"/> 
             </a>
           </li>
         </ul>
