@@ -1,0 +1,75 @@
+.containerHome {
+    width: 95%;
+    height: 82vh;
+    background: linear-gradient(#bdc7cd, #6d50a8);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+
+    color: white;
+}
+
+/* Estilo del título */
+.title {
+    font-size: 2.5rem;
+   font-weight: bold;
+    margin-bottom: 2rem;
+    word-wrap: break-word; /* Evita desbordes de texto */
+    max-width: 90%; /* Ajusta el ancho del título en pantallas pequeñas */
+    color: #222831;
+}
+
+/* Contenedor del contenido */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Estilos del texto */
+.textContainer {
+    max-width: 50%;
+    font-size: 1.6rem !important;
+    line-height: 1.7;
+    word-wrap: break-word;
+    color: #222831;
+}
+
+/* Estilos de la imagen */
+.imageContainer {
+    max-width: 60%;
+}
+
+.profileImage {
+    width: 250px !important;
+    height: 280px !important;
+    border-radius: 50%;
+    border: 5px solid rgb(90, 44, 100);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 890px) {
+    .containerHome {
+        width: 90%;
+        height: 870px !important;
+    }
+}
+@media (max-width: 1294px) {
+    .containerHome {
+        width: 95.7% !important;
+        height: 780px !important;
+    }
+}
+@media (max-width: 2150px) {
+    .containerHome {
+        width: 97%;
+        height: 770px;
+    }
+}

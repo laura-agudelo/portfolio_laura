@@ -1,0 +1,80 @@
+/* Contenedor principal */
+.containerSkills {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(#bdc7cd, #6d50a8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Título */
+.tittleSkills {
+    font-size: 2rem;
+    color: #222831;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Lista de habilidades */
+.liSkills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    width: 25%;
+    justify-content: center;
+}
+
+/* Estilos para cada icono */
+.iconSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #64489c;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    word-wrap: break-word; /* Evita desbordamientos de texto */
+    max-width: 100%;
+}
+
+.iconSkills:hover {
+    transform: scale(1.1);
+    background-color: #522891;
+}
+
+/* Responsive */
+@media (max-width: 998px) {
+    .containerSkills {
+        width: 95%;
+        height: 800px !important;
+    }
+}
+@media (max-width: 1294px) {
+    .containerSkills {
+        width: 96.3% !important;
+        height: 790px;
+    }
+}
+@media (max-width: 2150px){
+    .containerSkills{
+        width: 97%;
+        height: 780px;
+    }
+    .liSkills{
+        width: 65%;
+        height: 300px;
+    }
+}
+
+

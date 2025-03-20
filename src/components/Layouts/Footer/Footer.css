@@ -1,0 +1,83 @@
+/* Estilos generales */
+#root >.containerFooter {
+   background: #45366e;
+    padding: 10px 20px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-links li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .containerFooter > .footer-links a:hover {
+    color: #ffeb3b;
+  }
+  
+  .icon {
+    font-size: 3.5rem;
+    color: white;
+  }
+  @media (max-width: 455px) {
+    #root >.containerFooter{
+      width: 100%;
+      background: #45366e;
+    }
+  }
+  @media (max-width: 676px) {
+    .containerFooter{
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 2150px) {
+    #root .containerFooter{
+      width: 98.11%;
+    }
+  }
+  
+  /* 🟢 Diseño Responsivo */
+  @media (max-width: 851px) {
+    .containerFooter{
+      width: 80%;
+    }
+    .footer-links {
+      display: flex;
+      gap: 30px;
+    }
+  
+    .footer-links a {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 2.3rem;
+    }
+  }
+  

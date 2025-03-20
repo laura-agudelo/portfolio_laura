@@ -1,0 +1,122 @@
+/* Estilos base del header */
+#root  >.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #45366e;
+    padding: 10px 20px;
+    height: 100px;
+    justify-content: flex-end;
+  }
+  
+  .containerHeader > .logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Estilos del menú de navegación */
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  /* Estilos para los enlaces */
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 24px;
+  }
+  
+  .nav-links a:hover {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  /* Botón de menú hamburguesa */
+  .menu-toggle {
+    display: none; /* Oculto en pantallas grandes */
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Responsive para móviles */
+
+  @media (max-width: 455px) {
+    #root  >.containerHeader {
+      width: 94%;
+    }
+  }
+  @media (max-width: 511px) {
+    #root  >.containerHeader {
+      width: 94%;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Se muestra en pantallas pequeñas */
+    }
+  
+    .nav-links {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      opacity: 10;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Muestra el menú cuando el botón es presionado */
+    }
+  }
+  @media (max-width: 786px) {
+    #root  >.containerHeader {
+      width: 92%;
+    }
+  }
+  @media (max-width: 910px) {
+    #root  >.containerHeader {
+      width: 92%;
+    }
+  }
+  @media (max-width: 938px) {
+    #root  >.containerHeader {
+      width: 93%;
+    }
+  }
+  @media (max-width: 1002px) {
+    #root  >.containerHeader {
+      width: 93%;
+    }
+  }
+  @media (max-width: 1166px) {
+    #root  >.containerHeader {
+      width: 93%;
+    }
+  }
+  @media (max-width: 1284px) {
+    #root  >.containerHeader {
+      width: 93%;
+    }
+  }
+  @media (max-width: 1876px) {
+    #root  >.containerHeader {
+      width: 94%;
+    }
+  }
+  @media (max-width: 2150px) {
+    #root  >.containerHeader {
+      width: 98.11%;
+    }
+  }
+  

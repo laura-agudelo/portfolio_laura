@@ -1,0 +1,62 @@
+/* Contenedor principal */
+.containerSocialSkills {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#bdc7cd, #6d50a8);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Estilo del título */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Lista de habilidades */
+.skillsList {
+    list-style: none;
+    padding: 0;
+    width: 95%;
+    max-width: 600px;
+}
+
+.skillsList li {
+    background-color: #64489c;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skillsList li:hover {
+    transform: scale(1.05); /*Tamaño de agrndar cada contenedor*/
+    background-color: #522891;
+}
+
+/* Responsive */
+@media (max-width: 998px) {
+    .containerSocialSkills {
+        width: 90%;
+        height: 790px !important;
+    }
+}
+@media (max-width: 1294px) {
+    .containerSocialSkills {
+        width: 96% !important;
+        height: 790px;
+    }
+}
+@media (max-width: 2150px) {
+    .containerSocialSkills{
+        width: 97%;
+        height: 770px;
+    }
+}
