@@ -13,10 +13,10 @@
 /* Título */
 .tittleSkills {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Reducimos tamaño en móviles */
     color: white;
-    margin-bottom: 30px;
-    padding: 40px;
+    margin-bottom: 9px;
+    padding: 80px;
 }
 
 /* Lista de habilidades */
@@ -37,44 +37,61 @@
     flex-direction: column;
     align-items: center;
     background-color: #64489c;
-    padding: 1rem;
+    padding: 0.8rem; /* Reducimos el padding en móviles */
     border-radius: 8px;
-    font-size: 1.7rem;
+    font-size: 1.5rem; /* Reducimos el tamaño de los íconos */
     color: white;
     transition: transform 0.3s ease, background 0.3s ease;
     cursor: pointer;
     text-align: center;
-    word-wrap: break-word; /* Evita desbordamientos de texto */
+    word-wrap: break-word;
     max-width: 100%;
+    
 }
 
 .iconSkills:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #522891;
 }
 
-/* Responsive */
-@media (max-width: 998px) {
+/* 🔹📱 AJUSTES PARA PANTALLAS PEQUEÑAS (≤ 425px) */
+@media (max-width: 425px) {
     .containerSkills {
+        width: 100%;
+        padding: 1.5rem;
+        height: auto; /* Ajuste automático en móviles */
+    }
+
+    .tittleSkills {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    .liSkills {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+        width: 90%; /* Ajustamos el ancho */
+        gap: 0.5rem; /* Menos espacio entre íconos */
+    }
+
+    .iconSkills {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+}
+
+/* 🔹📱 MÁS PEQUEÑOS (≤ 375px, iPhone SE) */
+@media (max-width: 375px) {
+    .tittleSkills {
+        font-size: 1.6rem;
+    }
+
+    .liSkills {
+        grid-template-columns: repeat(1, 1fr); /* Una sola columna */
         width: 95%;
-        height: 800px !important;
     }
-}
-@media (max-width: 1294px) {
-    .containerSkills {
-        width: 96.3% !important;
-        height: 790px;
-    }
-}
-@media (max-width: 2150px){
-    .containerSkills{
-        width: 97%;
-        height: 780px;
-    }
-    .liSkills{
-        width: 65%;
-        height: 300px;
-    }
-}
 
-
+    .iconSkills {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}

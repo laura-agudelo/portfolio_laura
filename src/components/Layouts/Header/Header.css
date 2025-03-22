@@ -23,11 +23,11 @@ body {
 
 /* Contenedor del logo */
 .logo {
-  font-size: 24px;
   font-weight: bold;
   color: white;
   margin-left: 20px;
   white-space: nowrap;
+  font-size: 2rem;
 }
 
 /* Contenedor de navegación */

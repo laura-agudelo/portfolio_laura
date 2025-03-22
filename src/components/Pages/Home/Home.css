@@ -37,8 +37,18 @@
     max-width: 50%;
     font-size: 1.6rem !important;
     line-height: 1.7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #64489c;
+    padding: 0.8rem; /* Reducimos el padding en móviles */
+    border-radius: 29px;
+    color: white;
+    text-align: center;
     word-wrap: break-word;
-    color: #222831;
+    max-width: 100%;
+    background-color: rgba(100, 72, 156, 0.5);
 }
 
 /* Estilos de la imagen */
@@ -49,9 +59,8 @@
 .profileImage {
     width: 250px !important;
     height: 280px !important;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 5px solid rgb(90, 44, 100);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive */
