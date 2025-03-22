@@ -12,11 +12,11 @@
 
 /* Título */
 .tittleSkills {
-    font-size: 2rem;
-    color: #222831;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    padding: 40px;
 }
 
 /* Lista de habilidades */
